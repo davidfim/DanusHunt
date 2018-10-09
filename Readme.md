@@ -1,5 +1,6 @@
 
 I.	Perencanaan Website
+
 A.	Penjelasan
 Di web ini kita menyediakan portal danus se-Jatinangor, dimana bagi jurusan-jurusan atau himpunan-himpunan yang akan mengadakan event atau membutuhkan danusan bisa mengunjungi webnya. Disana akan tersedia database danus beserta harganya dan user bisa menghubungi penjual berdasarkan data yang telah sediakan. Nama web nya adalah DanusHunt.
 

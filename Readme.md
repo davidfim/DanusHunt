@@ -17,4 +17,7 @@ D.	Target Pengguna
 Untuk target, kita memfokuskan kepada mahasiswa di Unpad yang membutuhkan informasi untuk danusan
 
 II. Mockup
-![](images/mockup.jpg)
+![](images/Mockup.jpg)
+
+III. ERD Database
+![](images/ERD.jpg)

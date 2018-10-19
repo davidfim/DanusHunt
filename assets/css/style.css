@@ -14,7 +14,7 @@ body{
 
 .loginbox {
   width: 320px;
-  height: 420px;
+  height: 440px;
   padding:20px;
   background: transparent;
   border-style:solid;
@@ -78,6 +78,23 @@ body{
 
 .loginbox a:hover{
   color: #FFFFFF;
+}
+.loginbox input[type="button"]{
+  height: 80px;
+  width: 100%;
+  border:4px solid white;
+  margin-bottom:50px;
+  border-radius: 80px;
+  background: transparent;
+  font-size: 40px;
+  color: white;
+  padding: 5px;
+  outline: none;
+}
+
+.loginbox input[type="button"]:hover{
+  background: #FFFFFF;
+  color:#000e1c;
 }
 /*============================ DAFTAR BOX====================*/
 
@@ -148,6 +165,7 @@ body{
 .daftarbox a:hover{
   color: #FFFFFF;
 }
+
 .avatar{
   width: 110px;
   height: 110px;
@@ -157,7 +175,30 @@ body{
   left: calc(50% - 50px);
 }
 
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:transparent;
+}
 
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color:white;
+    color:#000e1c;
+}
 .navbar {
   margin-bottom: 0px;
   border-radius: 0;

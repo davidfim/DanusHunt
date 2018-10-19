@@ -1,0 +1,62 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Detail Barang</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/dbarang.css" />
+	<script src="assets/js/order.js"></script>
+
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><img src="images/LOGO.png" width="125" height="50" alt="DanusHunt">
+			<li style="float:right"><a href="login.html">Login / Daftar</a></li>
+		</ul>
+	</nav>
+	<div class="container">
+		<img src="images/download.jpg" alt="" class="foto-danus">
+		
+		<div class="keterangan">
+			<h2>Nama Barang Danusan</h2>
+			<h4>Rp xx.000<h4>
+			<!-- <h5>Keterangan Danush</h5> -->
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		</div>
+		<div class="container2"> 
+			<div class="pelapak"> 
+				  <img src="images/avatar.png" alt="Pict" class="profile-thumbnail">
+					  <div class="profile-name">
+					    <h3>Nama Pelapak</h3>
+					    <h4>@ossia</h4>
+					  </div>
+			</div>
+		
+			
+			<div class="order-btn"> 
+				<button id="kurang" onclick="kurang()">-</button>
+				<p id="angka" style="padding="5px 30px"> 0 </p>
+				<button id="tambah" onclick="tambah()">+</button>
+			</div>
+
+			<div class="beli-btn">
+				<button id="beli">Beli</button>
+			</div>
+		</div>
+	
+
+	<script type="text/javascript">
+		var angka=document.getElementById("angka");
+  		let i=0;
+   		function tambah() {
+   			i++;
+	  		angka.innerHTML=i;
+	  	}
+ 		function kurang() {
+	   		i--;
+	   		angka.innerHTML=i;
+  		} 
+	</script>
+
+	
+</body>
+</html>

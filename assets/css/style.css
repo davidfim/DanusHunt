@@ -341,6 +341,10 @@ li a:hover {
 #tableganti input[type="text"]{
   height: 50px;
   width: 250px;
+
+}#tableganti input[type="text"]:focus{
+  border:1px solid white;
+  box-shadow: 0 0 10px #fdff39;
 }
 
 #tableganti tr,td{

@@ -2,6 +2,8 @@ body{
   font-family: sans-serif;
   background-color: #000e1c;
   color: white;
+  margin: 0px;
+  padding: 0px;
 }
 .search-box{
   padding:10px;
@@ -212,8 +214,178 @@ li a:hover {
     background-color:white;
     color:#000e1c;
 }
+
+/*===========================================Grid============================================*/
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.container .kiri {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 0px;
+}
+
+.container .kanan {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 0px;
+}
+
+.container2 {
+  margin-top: 55px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 20px;
+}
+
+
+.container2 .manis img:hover {
+  /*background-color: grey;*/
+  cursor: pointer;
+
+}
+
+.container2 .asin img:hover {
+  /*background-color: grey;*/
+  cursor: pointer;
+
+}
+
+.container2 .manis img {
+  width: 500px;
+  border-radius: 20px;
+  margin-left: 150px;
+
+}
+
+.container2 .asin img {
+  width: 500px;
+  border-radius: 20px;
+  margin-right: 25%
+
+}
+
+.container3 {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.container3 img {
+  border-radius: 20px;
+
+}
+
+
+.container3 img:hover {
+  border-radius: 20px;
+  /*width: 105%;*/
+  cursor: pointer;
+}
+
+
 /*===========================================Slide Show==========================================*/
-.slideshow-container {
+.slider {
+  overflow: hidden;
+  width: 1000px;
+
+}
+
+.slider figure div {
+  width: 20%;
+  float: left;
+}
+
+.slider figure img {
+  width: 100%;
+  float: left;
+}
+
+.slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slidy infinite;
+}
+
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+
+  10% {
+    left: 0%;
+  }
+
+  12% {
+    left: -100%;
+  }
+
+  22%{
+    left: -100%;
+  }
+
+  24% {
+    left: -200%;
+  }
+
+  34% {
+    left: -200%;
+  }
+
+  36% {
+    left: -300%;
+  }
+
+  46% {
+    left: -300%;
+  }
+
+  48% {
+    left: -400%;
+  }
+
+  58% {
+    left: -400%;
+  }
+
+  60% {
+    left: -300%;
+  }
+
+  70% {
+    left: -300%;
+
+  }
+
+  72% {
+    left: -200%;
+  }
+
+  82% {
+    left: -200%;
+  }
+
+  84% { 
+    left: -100%; 
+  }
+
+  94% {
+    left: -100%;
+  }
+
+  96% {
+    left: 0%;
+  }
+}
+
+
+
+/*.slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
@@ -221,7 +393,8 @@ li a:hover {
 /*.myslides{
   display: none;*/
 }
-.prev, .next {
+
+/*.prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -268,6 +441,8 @@ li a:hover {
   display: inline-block;
   transition: background-color 0.6s ease; /*Sedikit animas 0.6 detik waktu warnanya berubah*/
 }
+
+/*
 .active, .dot:hover {
   background-color: #717171;
 }

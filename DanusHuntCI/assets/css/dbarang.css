@@ -1,0 +1,141 @@
+body{
+  background-color: white;
+  font-family: sans-serif;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:transparent;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color:white;
+    color:#000e1c;
+}
+nav {
+	background-color: #000e1c;
+	margin: -10px;
+	padding: 10px;
+}
+	
+.container {
+	display: grid;
+	grid-template-columns: 0.5fr 2fr 1fr;
+	grid-gap: 10px;
+	background-color: white;
+	margin: 10px;
+	padding: 20px;
+
+
+}
+
+.container img {
+	height:auto
+	width: 100%;
+	display: block;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	/*margin-left: 30%;*/
+	align-self: right;
+}
+
+.keterangan {
+	background-color: #000e1c;
+	padding: 8px 5px 5px 5px;
+	justify-content: left;
+	margin-left: 10px;
+	padding: 10px 20px 20px 20px;
+}
+
+.keterangan h2 {
+	color: #fdff39;
+}
+.keterangan h4,h5 {
+	color: white;
+}
+
+.keterangan p {
+	color: white;
+	justify-content: center;
+	font-size: 10pt;
+}
+
+.order-btn {
+	/*margin-right: 20px;*/
+	align-items: center;
+	/*grid-template-columns: 2fr 1fr 2fr; */
+	display: flex;
+	flex-direction: row;
+	margin: 0px;
+}
+
+.order-btn p {
+	padding: 5px 30px;
+	border: 2px;
+	border-color: black;
+}
+
+.beli-btn button {
+	padding: 5px 146px;
+	background-color: #fdff39;
+	color: black;
+	font-size: 18px;
+}
+
+#kurang {
+	padding: 5px 60px;
+	background-color: #fdff39;
+	color: grey;
+}
+
+#tambah {
+	padding: 5px 60px;
+	background-color: #fdff39;
+	color: grey;
+}
+
+#kurang:hover {
+	cursor: pointer;
+	background-color: cyan;
+}
+
+#tambah:hover {
+	cursor: pointer;
+	background-color: cyan;
+}
+
+.container2 {
+	display: flex;
+	flex-direction: column;
+}
+
+.pelapak {
+	display: flex;
+	flex-direction: row;
+}
+
+.pelapak .profile-thumbnail {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+ }
+
+.pelapak .profile-name {
+    display: flex;
+    margin-left: 10px;
+  }
+

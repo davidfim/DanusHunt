@@ -5,16 +5,45 @@ body{
   margin: 0px;
   padding: 0px;
 }
+
 .search-box{
   padding:10px;
+  width: 200%;
+  margin: 1.5em 2em 1em 4em;
+  border-radius: 10px;
 }
+
 .navbar{
   padding: 10px;
-  margin:-10px;
   margin-bottom: 0px;
   border-radius: 0;
   background-color:#1e3144;
   min-height:50px;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:transparent;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px 15px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color:white;
+    color:#000e1c;
 }
 
 
@@ -190,30 +219,7 @@ body{
   left: calc(50% - 50px);
 }
 
-ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color:transparent;
-}
 
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color:white;
-    color:#000e1c;
-}
 
 /*===========================================Grid============================================*/
 .container {
@@ -234,6 +240,9 @@ li a:hover {
 }
 
 .container2 {
+  /*position: absolute;
+  left: 25%;
+  width: 50%;*/
   margin-top: 55px;
   display: grid;
   grid-template-columns: 50% 50%;

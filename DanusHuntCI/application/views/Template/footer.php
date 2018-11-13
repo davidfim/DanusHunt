@@ -1,5 +1,5 @@
-<Footer>
+<!-- <Footer>
     
-</Footer>
+</Footer> -->
 </body>
 </html>

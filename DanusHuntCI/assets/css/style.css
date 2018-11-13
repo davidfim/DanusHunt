@@ -222,82 +222,34 @@ li a:hover {
 /*===========================================Grid============================================*/
 .container {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 4fr 1fr;
 }
 
 .container .kiri {
   display: grid;
-  grid-template-columns: 50% 50%;
   margin: 0px;
 }
 
 .container .kanan {
   display: grid;
-  grid-template-columns: 50% 50%;
   margin: 0px;
 }
 
-.container2 {
-  /*position: absolute;
-  left: 25%;
-  width: 50%;*/
+/* .container2 {
   margin-top: 55px;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-gap: 20px;
-}
+} */
 
 
-.container2 .manis img:hover {
-  /*background-color: grey;*/
-  cursor: pointer;
 
-}
-
-.container2 .asin img:hover {
-  /*background-color: grey;*/
-  cursor: pointer;
-
-}
-
-.container2 .manis img {
-  width: 500px;
-  border-radius: 20px;
-  margin-left: 150px;
-
-}
-
-.container2 .asin img {
-  width: 500px;
-  border-radius: 20px;
-  margin-right: 25%
-
-}
-
-.container3 {
-  width: 100%;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 30px;
-}
-
-.container3 img {
-  border-radius: 20px;
-
-}
-
-
-.container3 img:hover {
-  border-radius: 20px;
-  /*width: 105%;*/
-  cursor: pointer;
-}
 
 
 /*===========================================Slide Show==========================================*/
 .slider {
   overflow: hidden;
-  width: 1000px;
+  width: 100%;
 
 }
 
@@ -389,6 +341,46 @@ li a:hover {
     left: 0%;
   }
 }
+
+/*====================================isi main====================================*/
+.bag1main{
+  width: 100%;  
+}
+
+.bag1main .manis{
+  width: 45%;
+  padding: 2%;
+  border-radius: 30px;
+  margin: 0px;
+}
+
+.bag1main .asin{
+  width: 45%;
+  padding : 2%;
+  border-radius: 30px;
+  margin: 0px;
+}
+
+.bag1main .list{
+  width: 100%;
+  border-radius: 20px;
+}
+
+.bag1main .manis:hover {
+  /*background-color: grey;*/
+  cursor: pointer;
+
+}
+
+.bag1main .asin:hover {
+  /*background-color: grey;*/
+  cursor: pointer;
+}
+
+.bag1main .list:hover{
+  cursor: pointer;
+}
+
 
 /*=====================================ISI================================*/
 

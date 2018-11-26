@@ -24,7 +24,7 @@
 	<div class="container">
 		<div class="kiri"></div>
 		<div class="bag1main">
-			<a href="asd"><img src="images/manis.jpg" class="manis"></a>
+			<a href="<?php echo base_url("listBarangManis")?>"><img src="images/manis.jpg" class="manis"></a>
 			<img src="images/asin.jpg" class="asin">
 			<img src="images/list.jpg" class="list">
 		</div>
@@ -32,18 +32,4 @@
 	</div>
 
 
-	 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-
-// Create connection
-$conn = mysqli_connect($servername, $username, $password);
-
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-echo "Connected successfully";
-
-?> 
+	

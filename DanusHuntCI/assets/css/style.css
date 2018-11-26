@@ -54,6 +54,56 @@ li a:hover {
   width: auto;
   position: absolute;
 }
+
+/*========================SEARCH BOX===========================*/
+.search-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #2f3640;
+	height: 40px;
+	padding: 10px;
+	border-radius: 30px;
+}
+
+.search-box a {
+	display: inline-block;
+	margin: 0;
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.search-box a img {
+	width: 100%;
+}
+
+.search-box:hover >.search-txt {
+	width: 240px;
+	margin-left: 10px;
+	padding: 0 6px;
+}
+
+.search-box:hover > a {
+	margin-right: 10px;
+}
+
+
+.search-txt {
+	border: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0;
+	color: white;
+	font-size: 16px;
+	transition: 0.4s;
+	line-height: 40px;
+	width: 0px;
+}
+
 /*========================LOGIN BOX=======================*/
 
 .loginbox {
@@ -219,7 +269,7 @@ li a:hover {
 
 
 
-/*===========================================Grid============================================*/
+/*===========================================Grid Main============================================*/
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
@@ -454,21 +504,247 @@ li a:hover {
 }
 */
 
+/*=======================================ISI LIST BARANG=============================================*/
 
-.navbar-brand {
-  padding-left:10px;
-  padding-top:10px;
-  height: 70px;
-  line-height: 80px;
+.kerangkalist{
+  display: grid;
+  grid-template-columns: 300px auto;
 }
 
-.navbar-right{
-  padding-top: 20px;
-  padding-right: 40px;
+.kerangkalist .optionkiri{
+  border: 1px solid white;
+}
+
+.kerangkalist .listkanan{
+  border: 1px solid white;
+}
+
+.listkanan .ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+.listkanan .li{
+  float: left;
+  
+}
+
+.poinbarang{
+  margin-top: 20px;
+  margin-left: 20px;
+  border: #FFFFFF;
+  border-radius: 40px;
+  background: #fbe165;
+  padding-left: 20px;
+  padding-top:20px;
+  height: 300px;
+  width: 200px;
+  border: 1px solid green;
+}
+
+.poinbarang p{
+  color: black;
+}
+
+/*========================================About Us==================================*/
+
+.team-section {
+  overflow: hidden;
+  text-align: center;
+ /* background: #1e3144;*/
+  padding: 60px;
+
+}
+
+.team-section h1 {
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  color: white;
+  font-size: 20px;
+}
+
+.border {
+  display: block;
+  margin: auto;
+  width: 160px;
+  height: 3px;
+  background: black;
+  margin-bottom: 20px;
+  margin-top: 1em;
+}
+
+.ps {
+  margin-bottom: 40px;
+}
+
+.ps a {
+  display: inline-block;
+  margin: 0 30px;
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.ps a img {
+  width: 100%;
+  filter: grayscale(100%);
+  transition: 0.4s all;
 }
 
 
-footer {
-  background-color: #f2f2f2;
-  padding: 25px;
+.ps a:hover{
+  width: 250px;
+  height: 250px;
+  transition: 1s all;
+}
+
+
+.ps a:hover > img {
+  filter: none;
+  overflow: none;
+  display: absolute;
+  margin: 0px;
+}
+
+.ps a:target {
+  filter: none;
+}
+  
+
+.section {
+  width: 600px;
+  margin: auto;
+  font-size: 20px;
+  color: white;
+  text-align: justify;
+  height: 0;
+  overflow: hidden;
+}
+
+.section:target {
+  height: auto;
+}
+
+.name {
+  display: block;
+  margin-bottom: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+/*========================================Detail Barang==================================*/
+
+.detail-barang {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-gap: 10px;
+	background-color: white;
+	margin: 10px;
+	padding: 20px;
+  background: white;
+
+}
+
+.detail-barang img {
+	height:auto;
+	width: 100%;
+	display: block;
+	box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	/*margin-left: 30%;*/
+	align-self: right;
+}
+
+.detail-barang .keterangan {
+	background-color: #000e1c;
+	padding: 8px 5px 5px 5px;
+	justify-content: left;
+	margin-left: 10px;
+	padding: 10px 20px 20px 20px;
+	border-radius: 20px;
+}
+
+.keterangan h2 {
+	color: #fdff39;
+}
+.keterangan h4,h5 {
+	color: white;
+}
+
+.keterangan p {
+	color: white;
+	justify-content: center;
+	font-size: 10pt;
+}
+
+.detail-barang2 {
+	display: flex;
+	flex-direction: column;
+}
+
+.pelapak {
+	display: flex;
+	flex-direction: row;
+}
+
+.pelapak .profile-thumbnail {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+ }
+
+.pelapak .profile-name {
+    display: flex;
+    margin-left: 10px;
+    color: black;
+  }
+
+.order-btn {
+  /*margin-right: 20px;*/
+  align-items: center;
+  /*grid-template-columns: 2fr 1fr 2fr; */
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  color: black;
+
+}
+  
+.order-btn p {
+  padding: 5px 30px;
+  border: 2px;
+  border-color: black;
+}
+  
+.beli-btn button {
+  background-color: #fdff39;
+  color: grey;
+  font-size: 18px;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  margin-top: 20px;  
+  border-radius: 10px;  
+}
+  
+#kurang, #tambah {
+  padding: 10px;
+  width: 100%;
+  background-color: #fdff39;
+  color: grey;
+  border-radius: 10px;
+  border: none;
+}
+  
+#kurang:hover {
+  cursor: pointer;
+  background-color: cyan;
+}
+  
+#tambah:hover {
+  cursor: pointer;
+  background-color: cyan;
 }

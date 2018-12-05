@@ -17,8 +17,7 @@
 			<p>Password</p>
 			<input type="password" name="password" placeholder="Masukan Password">
 			<input type="submit" name="btn-login" value="Login">
-			<a href="daftar.html">Belum punya akun ? Daftar Disini</a> 
-			<!-- ganti link, jangan lupa -->
+			<a href="<?php echo base_url('daftarhunter'); ?>">Belum punya akun ? Daftar Disini</a> 
 		</form>
 	</div>
 </body>

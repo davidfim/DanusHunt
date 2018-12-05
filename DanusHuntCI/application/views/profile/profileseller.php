@@ -17,6 +17,8 @@
 						<td><?php echo $rows['no_hp'] ?></td>
                     </tr>
                     <tr>
+	
+	
 						<td>Email</td>
 						<td><?php echo $rows['email'] ?></td>
                     </tr>

@@ -23,6 +23,7 @@ class loginseller extends CI_Controller {
         if($cek > 0){
             $data_session = array(
                 'user' => $username,
+                'peran' =>'seller',
                 'status' => "login"
             );
 

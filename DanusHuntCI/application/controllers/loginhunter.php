@@ -25,6 +25,7 @@ class loginhunter extends CI_Controller {
         if($cek > 0){
             $data_session = array(
                 'user' => $username,
+                'peran' =>'hunter',
                 'status' => "login"
             );
 

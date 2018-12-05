@@ -434,7 +434,7 @@ li a:hover {
 
 /*=====================================ISI================================*/
 
-.isi{
+.isi {
   position: absolute;
   left:25%;
   right:25%;
@@ -862,3 +862,28 @@ li a:hover {
 	line-height: 40px;
 	width: 0px;
 }
+
+/*====================EDIT HUNTER ==================*/
+.edit input[type="text"] {
+  background: transparent;
+  padding: 10px;
+  border: 0;
+  color: #fdff39;
+}
+
+#simpan {
+  padding: 10px 30px 10px 30px;
+  border:none;
+  background: #feffd7;
+  cursor: pointer;
+  color:  #2f3640;
+  border-radius: 20px;
+  
+  font-size: 16px;
+}
+
+#simpan:hover {
+  color: #2f3640;
+  background: #fdff39;
+}
+

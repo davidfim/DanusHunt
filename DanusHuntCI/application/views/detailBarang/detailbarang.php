@@ -10,6 +10,7 @@
 						?><!-- <h5>Keterangan Danush</h5> -->
 						<p><?php echo $key['keterangan'];?></p>
 						<?php
+						$numpangvar = $key['id_seller'];
 					}
 				?>
             <?php endforeach ?>
@@ -17,9 +18,13 @@
 		<div class="detail-barang2"> 
 			<div class="pelapak"> 
 				  <img src="images/avatar.png" alt="Pict" class="profile-thumbnail">
-					  <div class="profile-name">
-					    <h3>Nama Pelapak</h3>
-					    <h4>@ossia</h4>
+				  <div class="profile-name">
+							<?php foreach ($seller->result_array() as $kunci):?>
+								<?php if ($kunci['id_seller']==$numpangvar) { ?>
+					    		<h3><?php echo $kunci['namalengkap']; ?></h3>
+					    		<h4><?php echo $kunci['username'];?></h4>
+								<?php } ?>
+							<?php endforeach ?>
 					  </div>
 			</div>
 		

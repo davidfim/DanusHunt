@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 28, 2018 at 08:34 AM
+-- Generation Time: Dec 08, 2018 at 07:46 AM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 5.6.38
 
@@ -33,19 +33,20 @@ CREATE TABLE `barang` (
   `namaBarang` varchar(50) DEFAULT NULL,
   `keterangan` text,
   `jenis` varchar(6) NOT NULL,
-  `harga` int(11) NOT NULL
+  `harga` int(11) NOT NULL,
+  `id_seller` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `barang`
 --
 
-INSERT INTO `barang` (`id_barang`, `namaBarang`, `keterangan`, `jenis`, `harga`) VALUES
-('001', 'Donat Madu', 'Donat terenak sedunia wow', 'manis', 2500),
-('002', 'Oreo Goreng', 'Oreo wowowowwoow terenak sedunia wow', 'manis', 1750),
-('003', 'Janji Mantan', 'wow keren keterangannya memang begini', 'manis', 30000),
-('004', 'Kue Balok', 'Kue balok potongan dengan potongan toping dan harga', 'manis', 2000),
-('005', 'Lidah Kucing', 'Lidah karena kalo kaki kasian ga bisa jalan', 'manis', 1500);
+INSERT INTO `barang` (`id_barang`, `namaBarang`, `keterangan`, `jenis`, `harga`, `id_seller`) VALUES
+('001', 'Donat Madu', 'Donat terenak sedunia wow', 'manis', 2500, 2),
+('002', 'Oreo Goreng', 'Oreo wowowowwoow terenak sedunia wow', 'manis', 1750, 2),
+('003', 'Janji Mantan', 'wow keren keterangannya memang begini', 'manis', 30000, 2),
+('004', 'Kue Balok', 'Kue balok potongan dengan potongan toping dan harga', 'manis', 2000, 2),
+('005', 'Lidah Kucing', 'Lidah karena kalo kaki kasian ga bisa jalan', 'manis', 1500, 2);
 
 -- --------------------------------------------------------
 
@@ -68,7 +69,8 @@ CREATE TABLE `hunter` (
 
 INSERT INTO `hunter` (`id_hunter`, `username`, `password`, `namalengkap`, `email`, `no_hp`) VALUES
 (1, 'davidfim77', 'inipassword', 'David Ferdinand I M', 'zonetdavidzo@gmail.com', '082216718462'),
-(2, 'syainasan', 'syaisyai', 'Syaina Nur Fauziah', 'syainasyaina@gmail.com', '089663455606');
+(2, 'syainasan', 'syaisyai', 'Syaina Nur Fauziah', 'syainasyaina@gmail.com', '089663455606'),
+(3, 'kakazuto', 'kaka123', 'Karimah', 'kakazuto2912@gmail.com', '081322994389');
 
 -- --------------------------------------------------------
 
@@ -124,7 +126,7 @@ ALTER TABLE `seller`
 -- AUTO_INCREMENT for table `hunter`
 --
 ALTER TABLE `hunter`
-  MODIFY `id_hunter` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_hunter` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `seller`

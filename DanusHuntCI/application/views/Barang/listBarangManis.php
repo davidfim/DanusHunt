@@ -8,7 +8,7 @@
             
             <?php foreach ($barang->result_array() as $key): ?>
             <li>
-                <a href=<?php echo base_url().'detailbarang?barang='.$key['namaBarang']?>>
+                <a href=<?php echo base_url().'detailbarang?id='.$key['id_barang']?>>
                     <div class="poinbarang">
                         <img src="<?php echo base_url("images/contohbarang.jpg")?>">
                         <p><?php echo $key['namaBarang'] ?></p>

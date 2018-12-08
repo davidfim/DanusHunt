@@ -2,10 +2,17 @@
 		<img src="images/download.jpg" alt="" class="foto-danus">
 		
 		<div class="keterangan">
-			<h2><?php echo $_GET['barang'];?></h2>
-			<h4>Rp xx.000<h4>
-			<!-- <h5>Keterangan Danush</h5> -->
-			<p>Lorem asdasdasd Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<?php foreach ($barang->result_array() as $key): ?>
+				<?php
+					if ($key['id_barang']==$_GET['id']) {
+						?><h2><?php echo $key['namaBarang'];?></h2><?php
+						?><h4>Rp <?php echo $key['harga'];?><h4><?php
+						?><!-- <h5>Keterangan Danush</h5> -->
+						<p><?php echo $key['keterangan'];?></p>
+						<?php
+					}
+				?>
+            <?php endforeach ?>
 		</div>
 		<div class="detail-barang2"> 
 			<div class="pelapak"> 

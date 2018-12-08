@@ -29,7 +29,7 @@
 		</tr>
 		<tr>
 			<td><a href="">Ganti Foto</a></td>
-			<td><a href="ubahprofilehunter.html">Ubah Profil</a></td>
+			<td><a href=<?php echo base_url().'edithunter'?>>Ubah Profil</a></td>
 		</tr>
 	</table>
 	</div>

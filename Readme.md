@@ -20,4 +20,4 @@ II. Mockup
 ![](images/Mockup.jpg)
 
 III. ERD Database
-![](images/ERD.jpg)
+![](images/ERDbaru.png)

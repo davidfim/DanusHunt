@@ -1,4 +1,4 @@
-<center><h1>List Danusan Manis</h1></center>
+<center><h1>List Danusan</h1></center>
 <div class="kerangkalist">
     <div class="optionkiri">
 
@@ -8,7 +8,7 @@
             
             <?php foreach ($barang->result_array() as $key): ?>
             <li>
-                <?php if ($key['jenis']=='manis') {?>
+                <?php if ($key['jenis']=='asin') {?>
                     <a href=<?php echo base_url().'detailbarang?id='.$key['id_barang']?>>
                         <div class="poinbarang">
                             <img src="<?php echo base_url("images/contohbarang.jpg")?>">

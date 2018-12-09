@@ -4,7 +4,7 @@
 
 <div class="isi">
 	<h1>Tambah Barang</h1>
-	<form>
+	<form action="<?php echo base_url(). 'tambahBarang/prosestambah'; ?>" method="post">
 	<table width="100%" id="tablegede">
 		<tr>
 			<td width="50%"><img src="images/avatar.png"></td>
@@ -24,8 +24,6 @@
 						</td>
                     </tr>
                     <tr>
-	
-	
 						<td>Harga</td>
 						<td><input id="add" style="padding: 10px; border-radius: 10px;" type="text" name="harga"></td>
                     </tr>

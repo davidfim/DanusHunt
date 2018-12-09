@@ -196,7 +196,7 @@ li a:hover {
 
 .daftarbox {
   width: 320px;
-  height: 550px;
+  height: auto;
   padding:20px;
   background: transparent;
   border-style:solid;
@@ -225,7 +225,7 @@ li a:hover {
   margin-bottom: 20px;
 }
 
-.daftarbox input[type="text"],input[type="password"]{
+.daftarbox input[type="text"],input[type="password"], input[type="tel"]{
   border:none;
   border-bottom:1px solid #fff;
   background: transparent;

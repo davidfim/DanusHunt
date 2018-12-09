@@ -21,10 +21,7 @@
 							<td>Email</td>
 							<td><input type="text" name="email" value="<?php echo $rows['email'] ?>"></td>
 						</tr>
-						<tr>
-							<td>Username</td>
-							<td><input type="text" name="username" value="<?php echo $rows['username'] ?>"/></td>
-						</tr>
+						
 					</table>
 
 			</td>

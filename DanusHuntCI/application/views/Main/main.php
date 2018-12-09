@@ -25,8 +25,8 @@
 		<div class="kiri"></div>
 		<div class="bag1main">
 			<a href="<?php echo base_url("listBarangManis")?>"><img src="images/manis.jpg" class="manis"></a>
-			<img src="images/asin.jpg" class="asin">
-			<img src="images/list.jpg" class="list">
+			<a href="<?php echo base_url("listBarangAsin")?>"><img src="images/asin.jpg" class="asin"></a>
+			<a href="<?php echo base_url("listToko")?>"><img src="images/list.jpg" class="list"></a>
 		</div>
 		<div class="kanan"></div>
 	</div>

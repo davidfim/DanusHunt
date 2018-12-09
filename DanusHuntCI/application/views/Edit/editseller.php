@@ -3,7 +3,7 @@
 ?>
 <div class="isi">
 	<h1>Profile Hunter</h1>
-	<form action="<?php echo base_url(). 'edithunter/prosesedit'; ?>" method="post">
+	<form action="<?php echo base_url(). 'editseller/prosesedit'; ?>" method="post">
 	<table width="100%" id="tablegede">
 		<tr>
 			<td width="50%"><img src="images/avatar.png"></td>
@@ -22,8 +22,8 @@
 							<td><input type="text" name="email" value="<?php echo $rows['email'] ?>"></td>
 						</tr>
 						<tr>
-							<td>Username</td>
-							<td><input type="text" name="username" value="<?php echo $rows['username'] ?>"/></td>
+							<td>ID Line</td>
+							<td><input type="text" name="idline" value="<?php echo $rows['idline'] ?>"></td>
 						</tr>
 
 					</table>
@@ -31,7 +31,7 @@
 			
 			<tr id="tableisi" class="edit">
 				<td width="20px">Bio</td>		
-				<td><textarea style="resize:none" rows="8" cols="50" type="text" name="bio"><?php echo $rows['bio']?>"></textarea></td>
+				<td><textarea style="resize:none" rows="8" cols="50" type="text" name="bio"><?php echo $rows['bio']?></textarea></td>
 			</tr>
 			</tr>
 			<tr>

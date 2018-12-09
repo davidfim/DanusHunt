@@ -28,11 +28,7 @@ class EditHunter extends CI_Controller {
                 $this->db->query("UPDATE hunter SET no_hp='".$_POST['no_hp']."' where username='".$tampunguname."'");
               }
             }
-            if (isset($_POST['username'])!="") {
-              if ($_POST['']!=NULL) {
-                $this->db->query("UPDATE hunter SET username='".$_POST['username']."' where username='".$tampunguname."'");
-              }
-            }
+            
             redirect('hunter');
         }
 }

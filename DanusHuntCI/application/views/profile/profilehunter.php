@@ -28,9 +28,14 @@
 			</td>
 		</tr>
 		<tr>
+<<<<<<< HEAD
 	<td><input style="margin-left:20px;" id="simpan" type="button" value="Ganti Gambar"></td>
 	<td><a href="<?php echo base_url('EditHunter')?>"><input style="float:right;margin-right: 35px;" id="simpan" type="button" value="Edit Profile"></a>
 </td>
+=======
+			<td><a href="">Ganti Foto</a></td>
+			<td><a href=<?php echo base_url().'edithunter'?>>Ubah Profil</a></td>
+>>>>>>> 5a9bbe8eef2cbe3937a21913720fe19adaf4d1bb
 		</tr>
 	</table>
 	</div>

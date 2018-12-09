@@ -28,8 +28,11 @@
 			</td>
 		</tr>
 		<tr>
-			<td><input style="margin-left:20px;" id="simpan" type="submit" value="Ubah Gambar"></td>
-			<td><input style="float:right;margin-right: 35px;" id="simpan" type="submit" name="simpan" value="Simpan"></td>
+			<!-- <td><input style="margin-left:20px;" id="simpan" type="submit" value="Ubah Gambar"></td> -->
+			<td></td>
+			<td>
+			<a href="<?php echo base_url('Hunter')?>"><input style="float:left;" id="simpan" type="button" value="Batal"></a>	
+			<input style="float:right;margin-right: 35px;" id="simpan" type="submit" name="Simpan" value="Simpan"></td>
 		</tr>
 	</table>
 	</div>

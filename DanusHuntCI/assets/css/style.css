@@ -6,12 +6,12 @@ body{
   padding: 0px;
 }
 
-.search-box{
+/* .search-box{
   padding:10px;
   width: 200%;
   margin: 1.5em 2em 1em 4em;
   border-radius: 10px;
-}
+} */
 
 .navbar{
   padding: 10px;
@@ -22,6 +22,7 @@ body{
 }
 
 ul{
+  margin: 10px;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -56,20 +57,22 @@ li a:hover {
 }
 
 /*========================SEARCH BOX===========================*/
-.search-box {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	background: #2f3640;
-	height: 40px;
+.li .search-box {
+	/* position: absolute; */
+	/* top: 50%;
+	left: 50%; */
+  /* transform: translate(-50%,-50%); */
+	background: #112a4d;
+	height: 20px;
 	padding: 10px;
-	border-radius: 30px;
+  border-radius: 30px;
+  margin-left: 20px;
 }
 
 .search-box a {
 	display: inline-block;
-	margin: 0;
+  margin: 0;
+  padding: 0;
 	width: 40px;
 	height: 40px;
 	overflow: hidden;
@@ -432,7 +435,7 @@ li a:hover {
 }
 
 
-/*=====================================ISI================================*/
+/*=====================================ISI/PROFILE================================*/
 
 .isi {
   position: absolute;
@@ -803,65 +806,7 @@ li a:hover {
 }
 
 /*==================================SearchBox======================================*/
-.navbar .search-box {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	background: #2f3640;
-	height: 40px;
-	padding: 10px;
-	border-radius: 30px;
-}
 
-/*.search-btn {
-	color: #e84118;
-	float: right;
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	background: #2f3640;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}*/
-
-.navbar .search-box a {
-	display: inline-block;
-	margin: 0;
-	width: 40px;
-	height: 40px;
-	overflow: hidden;
-	border-radius: 50%;
-}
-
-.navbar .search-box a img {
-	width: 100%;
-}
-
-.navbar .search-box:hover >.search-txt {
-	width: 240px;
-	margin-left: 10px;
-	padding: 0 6px;
-}
-
-.navbar .search-box:hover > a {
-	margin-right: 10px;
-}
-
-
-.navbar .search-txt {
-	border: none;
-	background: none;
-	outline: none;
-	float: left;
-	padding: 0;
-	color: white;
-	font-size: 16px;
-	transition: 0.4s;
-	line-height: 40px;
-	width: 0px;
-}
 
 /*====================EDIT HUNTER ==================*/
 .edit input[type="text"] {
@@ -887,3 +832,19 @@ li a:hover {
   background: #fdff39;
 }
 
+/* ============  PROFILE HUNTER ==================== */
+#edit-hunter {
+  padding: 10px 30px 10px 30px;
+  border:none;
+  background: #feffd7;
+  cursor: pointer;
+  color:  white;
+  border-radius: 20px;
+  
+  font-size: 16px;
+}
+
+#edit-hunter:hover {
+  color: #2f3640;
+  background: #fdff39;
+}

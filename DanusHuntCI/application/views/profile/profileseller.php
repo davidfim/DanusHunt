@@ -34,13 +34,15 @@
 			</td>
 		</tr>
 		<tr>
-			<td><a href="">Ganti Foto</a></td>
-			<td><a href="ubahprofileseller.html">Ubah Profil</a></td>
+		<td><input style="margin-left:20px;" id="simpan" type="button" value="Ganti Gambar"></td>
+		<td><a href="<?php echo base_url('EditSeller')?>"><input style="float:right;margin-right: 35px;" id="simpan" type="button" value="Edit Profile"></a>
+	</td>
 		</tr>
 	</table>
 	<br><br>
 	<div id="bio">
-		<h1>Bio</h1>
+		<h1>Bio</h1>			
 		<p><?php echo $rows['bio'] ?></p>
 	</div>
+	
 </div>

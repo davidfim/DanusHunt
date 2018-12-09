@@ -475,8 +475,9 @@ li a:hover {
 
 #bio{
   border:1px solid white;
-  border-radius: 10px;
+  border-radius: 32px;
   padding:20px;
+  margin-bottom: 20px;
 }
   
 .isigantiprofile{
@@ -809,11 +810,26 @@ li a:hover {
 
 
 /*====================EDIT HUNTER ==================*/
-.edit input[type="text"] {
+.edit input[type="text"], .edit textarea {
   background: transparent;
   padding: 10px;
   border: 0;
   color: #fdff39;
+}
+
+#custom-button {
+  padding: 10px 30px 10px 30px;
+  border:none;
+  background: #feffd7;
+  cursor: pointer;
+  color:  #2f3640;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+#custom-button:hover {
+  color: #2f3640;
+  background: #fdff39;
 }
 
 #simpan {
@@ -831,6 +847,8 @@ li a:hover {
   color: #2f3640;
   background: #fdff39;
 }
+
+
 
 /* ============  PROFILE HUNTER ==================== */
 #edit-hunter {

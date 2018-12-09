@@ -11,19 +11,19 @@
 					<table id="tableisi" class="edit">
 						<tr>
 							<td>Nama</td>
-							<td><input  type="text" name="namalengkap" placeholder="<?php echo $rows['namalengkap'] ?>"></td>
+							<td><input  type="text" name="namalengkap" value="<?php echo $rows['namalengkap'] ?>"></td>
 						</tr>
 						<tr>
 							<td>No. HP</td>
-							<td><input  type="text" name="no_hp" placeholder="<?php echo $rows['no_hp'] ?>"></td>
+							<td><input  type="text" name="no_hp" value="<?php echo $rows['no_hp'] ?>"></td>
 						</tr>
 						<tr>
 							<td>Email</td>
-							<td><input type="text" name="email" placeholder="<?php echo $rows['email'] ?>"></td>
+							<td><input type="text" name="email" value="<?php echo $rows['email'] ?>"></td>
 						</tr>
 						<tr>
 							<td>Username</td>
-							<td><?php echo $rows['username'] ?></td>
+							<td><input type="text" name="username" value="<?php echo $rows['username'] ?>"/></td>
 						</tr>
 					</table>
 

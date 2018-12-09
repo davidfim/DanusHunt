@@ -27,20 +27,45 @@
 	
 	
 						<td>Harga</td>
-						<td><input type="text" name="harga"></td>
+						<td><input id="add" style="padding: 10px; border-radius: 10px;" type="text" name="harga"></td>
                     </tr>
                     <tr>
 						<td>Keterangan</td>
-						<td><input type="text" name="keterangan"></td>
+						<td><input id="add" style="padding: 10px; border-radius: 10px;" type="text" name="keterangan"></td>
 					</tr>
 					
 				</table>
 			</td>
 		</tr>
 		<tr>
-			<td><a style="margin-left:20px;text-decoration: none;" id="simpan" href="<?php echo base_url("/uploadGambar")?>">Tambah Gambar</a></td>
+			<td><button type="button" style="margin-left:20px;text-decoration: none;" id="custom-button" >Tambah Gambar</button>
+			<input type="file" id="real-file" hidden="hidden" />
+			<!-- <span id="custom-text">No file, chosen yet.</span> -->
+			</td>
+
 			<td><input style="float:right;margin-right: 35px;" id="simpan" type="submit" name="simpan" value="Jual"></td>
 		</tr>
 	</table>
 </form>
 </div>
+
+<script type="text/javascript">
+	const realFileBtn = document.getElementById("real-file");
+	const customBtn = document.getElementById("custom-button");
+	// const customTxt = document.getElementById("custom-text");
+
+	customBtn.addEventListener("click",function() {
+		realFileBtn.click();
+	});
+
+	realFileBtn.addEventListener("change", function() {
+		if (realFileBtn.value) {
+			customTxt.innerHTML = realFileBtn.value;
+		}
+		else {
+			customTxt.innerHTML = "No file chosen,yet"
+		}
+	})
+
+
+</script>

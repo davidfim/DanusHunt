@@ -19,6 +19,9 @@ body{
   border-radius: 0;
   background-color:#1e3144;
   min-height:50px;
+  position: fixed;
+  width: 100%;
+  z-index:9999;
 }
 
 ul{
@@ -536,16 +539,21 @@ li a:hover {
 }
 
 .poinbarang{
-  margin-top: 20px;
-  margin-left: 20px;
+  /* margin-top: 20px;
+  margin-left: 20px; */
   border: #FFFFFF;
   border-radius: 40px;
   background: #fbe165;
   padding-left: 20px;
   padding-top:20px;
+  padding-right: 20px;
   height: 300px;
   width: 200px;
-  border: 1px solid green;
+  border: 1px solid black;
+}
+
+.poinbarang img{
+  border-radius:20px;
 }
 
 .poinbarang p{
@@ -863,6 +871,35 @@ li a:hover {
 }
 
 #edit-hunter:hover {
+  color: #2f3640;
+  background: #fdff39;
+}
+
+/*=======================DETAIL TOKO=====================*/
+.detail-toko {
+  margin-left: 30px;
+}
+
+.nama-toko img {
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+}
+
+
+/*=======================TAMBAH BARANG=====================*/
+#upload-button {
+  padding: 10px 30px 10px 30px;
+  border:none;
+  background: #feffd7;
+  cursor: pointer;
+  color:  #2f3640;
+  border-radius: 20px;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+#upload-button:hover {
   color: #2f3640;
   background: #fdff39;
 }

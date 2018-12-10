@@ -1,3 +1,4 @@
+<div style="padding-top: 100px;">
 <?php
 	$rows = $this->db->query("SELECT * FROM seller where username='".$this->session->user."'")->row_array();
 ?>
@@ -39,10 +40,34 @@
 	</td>
 		</tr>
 	</table>
+
 	<br><br>
 	<div id="bio">
 		<h1>Bio</h1>			
 		<p><?php echo $rows['bio'] ?></p>
 	</div>
-	
+	<h2>List danus seller ini</h2>
+	<div>
+		<?php
+			$idwow = $rows['id_seller'];
+			$barang=$this->db->query("SELECT * from barang where id_seller=$idwow");
+		?>
+		<ul>
+            
+            <?php foreach ($barang->result_array() as $key): ?>
+            <li>
+                <?php if (true) {?>
+                    <a href=<?php echo base_url().'detailbarang?id='.$key['id_barang']?> >
+                        <div class="poinbarang">
+                            <img src="<?php echo base_url("images/contohbarang.jpg")?>" style="border-radius:20px;">
+                            <p><?php echo $key['namaBarang'] ?></p>
+                            <p>RP <?php echo $key['harga'] ?></p>
+                        </div>
+                    </a>
+                <?php }?>
+            </li>
+            <?php endforeach ?>
+            
+        </ul>
+	</div>
 </div>

@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" style="padding-top: 77px">
 	<div class="kiri"></div>
 		<div class = "slider">
 		<figure>

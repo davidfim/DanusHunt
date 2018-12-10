@@ -1,4 +1,4 @@
-<div class="team-section">
+<div class="team-section" style="padding-top: 100px;">
 		<h1> About Us </h1>
 		<span class="border"></span>
 		<div class="ps">

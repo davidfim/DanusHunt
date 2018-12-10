@@ -1,3 +1,4 @@
+<div style="padding-top: 100px;">
 <?php
 	$rows = $this->db->query("SELECT * FROM seller where username='".$this->session->user."'")->row_array();
 ?>

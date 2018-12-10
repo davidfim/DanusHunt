@@ -1,3 +1,4 @@
+<div style="padding-top: 100px;">
 	<div class="detail-barang">
 		<img src="images/download.jpg" alt="" class="foto-danus">
 		
@@ -22,7 +23,7 @@
 							<?php foreach ($seller->result_array() as $kunci):?>
 								<?php if ($kunci['id_seller']==$numpangvar) { ?>
 					    		<h3><?php echo $kunci['namalengkap']; ?></h3>
-					    		<h4><?php echo $kunci['username'];?></h4>
+					    		<h4>@<?php echo $kunci['username'];?></h4>
 								<?php } ?>
 							<?php endforeach ?>
 					  </div>
@@ -39,6 +40,7 @@
 				<button id="beli">Beli</button>
 			</div>
 		</div>
+	</div>
 	
 
 	<script type="text/javascript">

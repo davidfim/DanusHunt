@@ -1,3 +1,4 @@
+<div style="padding-top: 100px;">
 <center><h1>List Danusan Manis</h1></center>
 <div class="kerangkalist">
     <div class="optionkiri">
@@ -23,3 +24,4 @@
         </ul>
 
     </div>
+</div>

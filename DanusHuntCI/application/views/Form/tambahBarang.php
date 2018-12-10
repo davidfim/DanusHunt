@@ -1,3 +1,4 @@
+<div style="padding-top: 100px;">
 <?php
 	$rows = $this->db->query("SELECT * FROM seller where username='".$this->session->user."'")->row_array();
 ?>
@@ -36,34 +37,98 @@
 			</td>
 		</tr>
 		<tr>
-			<td><button type="button" style="margin-left:20px;text-decoration: none;" id="custom-button" >Tambah Gambar</button>
-			<input type="file" id="real-file" hidden="hidden" />
+			<!-- <td>
+				<form method="post" enctype="multipart/form-data"> -->
+				
+				<!-- <button style="margin-left:20px;text-decoration: none;" id="custom-button">Tambah Gambar</button> -->
+				<!-- <input name="image" type="file" id="image"/><br>
+				<input style="margin-left:20px;" type="submit" name="insert" value="insert" id="insert"/>
+				 -->
+				<!-- </form> -->
 			<!-- <span id="custom-text">No file, chosen yet.</span> -->
-			</td>
+			<!-- </td> -->
+			<td>
 
 			<td><input style="float:right;margin-right: 35px;" id="simpan" type="submit" name="simpan" value="Jual"></td>
 		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
 	</table>
 </form>
+
+<form  method="post" enctype="multipart/form-data">           
+    <input type="file" name="image" id="image" />  
+    <br />  
+    <input type="submit" name="insert" id="insert" value="Insert"/>  
+</form> 
+           
+
 </div>
 
 <script type="text/javascript">
-	const realFileBtn = document.getElementById("real-file");
-	const customBtn = document.getElementById("custom-button");
+	// const realFileBtn = document.getElementById("image");
+	// const customBtn = document.getElementById("custom-button");
+	// const uploadBtn = document.getElementById("upload-button");
+	// $("#upload-button").hide();
 	// const customTxt = document.getElementById("custom-text");
 
-	customBtn.addEventListener("click",function() {
-		realFileBtn.click();
-	});
+	// customBtn.addEventListener("click",function() {
+	// 	realFileBtn.click();
+	// });
 
-	realFileBtn.addEventListener("change", function() {
-		if (realFileBtn.value) {
-			customTxt.innerHTML = realFileBtn.value;
-		}
-		else {
-			customTxt.innerHTML = "No file chosen,yet"
-		}
-	})
+	// $(document).ready(function () {
+	// 	$('#insert').click( function(){
+	// 		var image_name = $('#image').val();
+	// 		if (image_name == ''){
+	// 			alert("Masukkan gambar");
+	// 			return false;
+	// 		}
+	// 		else {
+	// 			var extension = $('#image').val().split('.').pop().toLowerCase();
+	// 			if (jQuery.inArray(extension, ['png','jpg','jpeg']) == -1) {
+	// 				alert('Invalid Image File');
+	// 				$('#image').val('');
+	// 				return false;
 
+	// 			}
+	// 		}
+	// 	})
+	// 	// body...
+	// })
+
+	
+
+
+	// realFileBtn.addEventListener("change", function() {
+	// 	if (realFileBtn.value) {
+	// 		customTxt.innerHTML = realFileBtn.value;
+	// 	}
+	// 	else {
+	// 		customTxt.innerHTML = "No file chosen,yet"
+	// 	}
+	// })
+
+	$(document).ready(function(){  
+      $('#insert').click(function(){  
+           var image_name = $('#image').val();  
+           if(image_name == '')  
+           {  
+                alert("Please Select Image");  
+                return false;  
+           }  
+           else  
+           {  
+                var extension = $('#image').val().split('.').pop().toLowerCase();  
+                if(jQuery.inArray(extension, ['png','jpg','jpeg']) == -1)  
+                {  
+                     alert('Invalid Image File');  
+                     $('#image').val('');  
+                     return false;  
+                }  
+           }  
+      });  
+ }); 
 
 </script>

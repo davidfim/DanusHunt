@@ -13,7 +13,7 @@
 		<img src="images/avatar.png" class="avatar">
 		<h1>Daftar Hunter</h1>
 		<form id="registration_form" action="<?php echo base_url(). 'daftarhunter/prosesdaftar'; ?>" method="post">
-			<input type="text"r name="NamaHunter" placeholder="Nama Lengkap" id="form_name" required>
+			<input type="text" name="NamaHunter" placeholder="Nama Lengkap" id="form_name" required>
 			<span class="error_form" id="username_error_message"></span><input type="text" name="UsernameHunter" placeholder="Username" id="form_username" required>
 			<span class="error_form" id="email_error_message"></span><input type="text" name="EmailHunter" placeholder="E-mail" id="form_email" required>
 			<span class="error_form" id="password_error_message"></span><input type="password" name="PasswordHunter" placeholder="Password" id="form_password" required>

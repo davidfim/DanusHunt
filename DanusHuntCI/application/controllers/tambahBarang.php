@@ -16,10 +16,23 @@ class TambahBarang extends CI_Controller {
         $harga=$this->input->post('harga');
         $keterangan=$this->input->post('keterangan');
     
-        $idseller= $this->db->query("SELECT id_seller from seller where username='".$this->session->user."'");
-        
-        $this->db->query("INSERT into barang ('namaBarang','jenis','harga','keterangan','id_seller') values ('$namabarang', '$jenis', '$harga', '$keterangan', '$idseller')");
+        $result = $this->db->query("SELECT id_seller from seller where username='".$this->session->user."'");
+        $isExist = $result->num_rows() > 0;
+        // kalo gaada
+        if(!$isExist) {
+            // kasih pesan gabisa nginput
+            redirect('seller');
+            // akhiri
+            return;
+        }
 
-        redirect('seller');
+        $idseller = (int) $result->result()[0]->id_seller;
+
+        // echo "<pre>"; var_dump($idseller); die();
+
+        $hasil = $this->db->query("INSERT into barang (namaBarang,jenis,harga,keterangan,id_seller) values ('$namabarang', '$jenis', '$harga', '$keterangan', $idseller)");
+
+        // var_dump($hasil);
+        redirect('tambahBarang');
     }
 }

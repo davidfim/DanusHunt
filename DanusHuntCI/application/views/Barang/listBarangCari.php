@@ -7,22 +7,25 @@
     </div>
     <div class="listkanan">
         <ul>
-            
+
+        <?php
+            $rows = $this->db->query("SELECT * FROM barang where namaBarang LIKE '%".$_GET['cari']."%'");
+        ?>
             <?php foreach ($barang->result_array() as $key): ?>
             <li>
-                //cari query buat search
-                <?php if () {?>
-                    <a href=<?php echo base_url().'detailbarang?id='.$key['id_barang']?>>
-                        <div class="poinbarang">
-                            <img style="border-radius:20px;" src="<?php echo base_url("images/contohbarang.jpg")?>">
-                            <p><?php echo $key['namaBarang'] ?></p>
-                            <p>RP <?php echo $key['harga'] ?></p>
-                        </div>
-                    </a>
+                <?php foreach ($rows->result_array() as $kunci) { ?>
+                  <?php if ($kunci['namaBarang']==$key['namaBarang']) {?>
+                      <a href=<?php echo base_url().'detailbarang?id='.$key['id_barang']?>>
+                          <div class="poinbarang">
+                              <img style="border-radius:20px;" src="<?php echo base_url("images/contohbarang.jpg")?>">
+                              <p><?php echo $key['namaBarang'] ?></p>
+                              <p>RP <?php echo $key['harga'] ?></p>
+                          </div>
+                      </a>
                 <?php }?>
             </li>
-            <?php endforeach ?>
-            
-        </ul>
+            <?php } ?>
+        <?php endforeach ?>
 
+        </ul>
     </div>

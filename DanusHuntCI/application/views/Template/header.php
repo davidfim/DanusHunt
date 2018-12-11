@@ -40,11 +40,12 @@
 				</li>
 
 				<li style="float:right;margin-top:10px; margin-right:20px">
-					<div class="search-box">
-				
-							<input class="search-txt" type="text" name="cari" placeholder="Type to search">
-							<a href="#"><img src="images/search3.png"></a>
-					</div>
+					<form class="" action="<?php echo base_url('listBarangCari') ?>" method="get">
+						<div class="search-box">
+							<input class="search-txt" type="text" name="cari" placeholder="Tekan Enter untuk Mencari">
+							<a><img src="images/search3.png"></a>
+						</div>
+					</form>
 				</li>
 				<!-- <li style="justify-content:center;"><input type="text" class="search-box" placeholder="Cari Danus / Toko"></li> -->
 			</ul>

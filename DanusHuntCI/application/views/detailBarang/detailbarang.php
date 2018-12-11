@@ -1,8 +1,8 @@
 <div style="padding-top: 100px;">
-	<div class="detail-barang">
-		<img src="images/download.jpg" alt="" class="foto-danus">
+	<div class="detail-barang" style="margin-left: 80px;margin-right: 80px;border-radius:20px;grid-template-columns:1fr 2fr;">
+		<img src="images/download.jpg" alt="" class="foto-danus" style="padding:30px; margin:20px;">
 		
-		<div class="keterangan">
+		<div class="keterangan" style="margin:20px; margin-left:30px;">
 			<?php foreach ($barang->result_array() as $key): ?>
 				<?php
 					if ($key['id_barang']==$_GET['id']) {
@@ -16,7 +16,7 @@
 				?>
             <?php endforeach ?>
 		</div>
-		<div class="detail-barang2"> 
+		<!-- <div class="detail-barang2"> 
 			<div class="pelapak"> 
 				  <img src="images/avatar.png" alt="Pict" class="profile-thumbnail">
 				  <div class="profile-name">
@@ -27,10 +27,10 @@
 								<?php } ?>
 							<?php endforeach ?>
 					  </div>
-			</div>
+			</div> -->
 		
 			
-			<div class="order-btn"> 
+			<!-- <div class="order-btn"> 
 				<button id="kurang" onclick="kurang()">-</button>
 				<p id="angka" style="padding="5px 30px"> 0 </p>
 				<button id="tambah" onclick="tambah()">+</button>
@@ -38,10 +38,10 @@
 
 			<div class="beli-btn">
 				<button id="beli">Beli</button>
-			</div>
+			</div> -->
 		</div>
 	</div>
-	
+<!-- 	
 
 	<script type="text/javascript">
 		var angka=document.getElementById("angka");
@@ -57,4 +57,4 @@
 	   		i--;
 	   		angka.innerHTML=i;
   		} 
-	</script>
+	</script> -->

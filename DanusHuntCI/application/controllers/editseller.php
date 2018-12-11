@@ -36,7 +36,12 @@ class EditSeller extends CI_Controller {
             if ($_POST['bio']!=NULL) {
               $this->db->query("UPDATE seller SET bio='".$_POST['bio']."' where username='".$tampunguname."'");
             }
-          }        
+          }
+        if (isset($_POST['image'])!="") {
+          if ($_POST['image']!=NULL) {
+            $this->db->query("UPDATE seller SET image='".$_POST['image']."' where username='".$tampunguname."'");
+          }
+        }         
         redirect('seller');
     }
 }

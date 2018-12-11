@@ -32,6 +32,10 @@
 						<td>Keterangan</td>
 						<td><input id="add" style="padding: 10px; border-radius: 10px;" type="text" name="keterangan"></td>
 					</tr>
+					<tr>
+						<td>Link Gambar</td>
+						<td><input id="add" style="padding: 10px; border-radius: 10px;" type="text" name="image"></td>
+					</tr>
 					
 				</table>
 			</td>
@@ -58,7 +62,9 @@
 	</table>
 </form>
 
-<form  method="post" enctype="multipart/form-data">           
+<a href="<?php echo base_url('uploadGambar') ?>"><button style="margin-left:20px;text-decoration: none;" id="custom-button">Tambah Gambar</button></a>
+
+<!-- <form  method="post" enctype="multipart/form-data">           
     <input type="file" name="image" id="image" />  
     <br />  
     <input type="submit" name="insert" id="insert" value="Insert"/>  
@@ -78,6 +84,8 @@
 	// 	realFileBtn.click();
 	// });
 
+	jadi tadinya bikin tombol yg bisa ngelink ke halaman lain gt klo mau aplod gambar
+tapo masih bingung jadi nya mauu   gimana format buat aplod gambarnya
 	// $(document).ready(function () {
 	// 	$('#insert').click( function(){
 	// 		var image_name = $('#image').val();
@@ -100,8 +108,31 @@
 
 	
 
+masih ga paham kamu nulis apaan yang aplot gambarnya
+jadi bingung mau benerin gimana
+	
+tpi klo mulai dri awal jg bingunng ngapus apa 
 
-	// realFileBtn.addEventListener("change", function() {
+jadi stug gitu loh yg up gambar dr tadi
+
+maaapinn:()
+nah ga tau beb kamu kan yg mulai bikin :(
+emang tadinya mau ky gimana ngaplodnya?
+
+tpi yang aplodnya masih kosong kan ?
+
+iyaa tadi mau begini bang
+si tombol tambah gambar itu ngelink ke hal uload  gambar
+jadi terpisah gt(?)
+paham?heheheheheheheh iya masihkosong
+wait
+tadi pagi teh bikin
+
+
+༼ ºل͟º ༼ ºل͟º ༼ ºل͟º ༽ ºل͟º ༽ ºل͟º ༽ temen temen squidward
+(づ｡◕‿‿◕｡)づ boo!
+ apa apaan ini wkkwwkkwwkkwkwkwkwkwkw
+// realFileBtn.addEventListener("change", function() {
 	// 	if (realFileBtn.value) {
 	// 		customTxt.innerHTML = realFileBtn.value;
 	// 	}
@@ -117,8 +148,31 @@
            {  
                 alert("Please Select Image");  
                 return false;  
-           }  
-           else  
+		   }  
+		   
+gitu pid ngerti ga maksudnya?
+heh bambang
+
+jadi gimana pid
+apakah kau mengerti?
+
+gini deh
+ga akan sempet klo aku harus ngertiin dlu maksudnya kecuali mulai dr awawl
+kamu mau ngelanjutin ga ??? 
+
+mending upload ky gitu atau pake link?
+tapi btw sok geura coba itu hal uploadGambar ko ga kebuka ya? salah di kontrolernya kah?
+
+
+		(づ￣ ³￣)づ  wololololololololololollolololololololool (づ￣ ³￣)づ
+	puji kulit kerang ajaib(づ￣ ³￣)づ
+
+	bich nouno solloo
+	~(˘▾˘~) terererereret(~˘▾˘)~
+	(；一_一)
+      bosen ah itu wae    
+	apaansiiiiiiii wkwkkwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwk	  
+		   else  
            {  
                 var extension = $('#image').val().split('.').pop().toLowerCase();  
                 if(jQuery.inArray(extension, ['png','jpg','jpeg']) == -1)  
@@ -131,4 +185,4 @@
       });  
  }); 
 
-</script>
+</script> -->

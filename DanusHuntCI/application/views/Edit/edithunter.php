@@ -7,7 +7,7 @@
 	<form action="<?php echo base_url(). 'edithunter/prosesedit'; ?>" method="post">
 	<table width="100%" id="tablegede">
 		<tr>
-			<td width="50%"><img src="images/avatar.png"></td>
+			<td width="50%"><img src="<?php echo $rows['image']?>"></td>
 			<td width="50%">
 					<table id="tableisi" class="edit">
 						<tr>
@@ -21,6 +21,10 @@
 						<tr>
 							<td>Email</td>
 							<td><input type="text" name="email" value="<?php echo $rows['email'] ?>"></td>
+						</tr>
+						<tr>
+							<td>Link Gambar Profile</td>
+							<td><input type="text" name="image" value="<?php if($rows['image']=="images/avatar.png"){ echo ("Belum ada gambar");} else {echo $rows['image']; }?>"></td>
 						</tr>
 						
 					</table>

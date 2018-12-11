@@ -9,6 +9,15 @@
 <body>
 	<header>
 		<div class="navbar">
+			<?php
+				if($this->session->userdata('peran')=="hunter"){
+				$rows = $this->db->query("SELECT * FROM hunter where username='".$this->session->user."'")->row_array();
+				}
+				else{
+					$rows = $this->db->query("SELECT * FROM seller where username='".$this->session->user."'")->row_array();
+	
+				}
+				?>
 			<ul>
 				<li><img src="<?php echo base_url("images/LOGO.png")?>" style="padding: 0" width="125" height="50" alt="DanusHunt"></li>
 				<li style="margin-top:10px;"><a href="<?php echo base_url("main")?>" >Home</a></li>
@@ -38,7 +47,7 @@
 						</div>
 					<?php } ?>
 				</li>
-
+				<li style="float:right; padding-top:13px;"><img src="<?php echo $rows['image']?>" style="width:50px; height=50px; margin:0px; padding:0px; border-radius:20%; "></li>
 				<li style="float:right;margin-top:10px; margin-right:20px">
 					<form class="" action="<?php echo base_url('listBarangCari') ?>" method="get">
 						<div class="search-box">

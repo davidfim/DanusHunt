@@ -1,9 +1,11 @@
 <div style="padding-top: 100px;">
-	<div class="detail-barang" style="margin-left: 80px;margin-right: 80px;border-radius:20px;grid-template-columns:1fr 2fr;">
-		<img src="images/download.jpg" alt="" class="foto-danus" style="padding:30px; margin:20px;">
+	<div class="detail-barang" style="margin-left: 100px;margin-right: 100px;border-radius:20px;">
+	<?php $wow=$this->db->query("SELECT * FROM barang where id_barang='".$_GET['id']."'")->row_array();?>
+		<img src="<?php echo $wow['image']?>" alt="" class="foto-danus" style="padding:30px; margin:20px;">
 		
 		<div class="keterangan" style="margin:20px; margin-left:30px;">
-			<?php foreach ($barang->result_array() as $key): ?>
+			<div class="nama-barang">
+				<?php foreach ($barang->result_array() as $key): ?>
 				<?php
 					if ($key['id_barang']==$_GET['id']) {
 						?><h2><?php echo $key['namaBarang'];?></h2><?php
@@ -15,19 +17,33 @@
 					}
 				?>
             <?php endforeach ?>
-		</div>
-		<!-- <div class="detail-barang2"> 
-			<div class="pelapak"> 
-				  <img src="images/avatar.png" alt="Pict" class="profile-thumbnail">
+			</div>
+			<div class="nama-pelapak">
+					
+				<div class="pelapak" style="display:flex;flex-direction:row"> 
+				  <img style="padding:0;" src="images/avatar.png" alt="Pict" class="profile-thumbnail">
 				  <div class="profile-name">
-							<?php foreach ($seller->result_array() as $kunci):?>
-								<?php if ($kunci['id_seller']==$numpangvar) { ?>
-					    		<h3><?php echo $kunci['namalengkap']; ?></h3>
-					    		<h4>@<?php echo $kunci['username'];?></h4>
+				  <?php foreach ($seller->result_array() as $kunci):?>
+							<?php if ($kunci['id_seller']==$numpangvar) { ?>
+					    		<h2 style="margin:10px; color:white;"><?php echo $kunci['namalengkap']; ?></h3>
+					    		<h4 style="margin:10px; "> @<?php echo $kunci['username'];?></h4>
+								<h4 style="margin:10px;"><?php echo $kunci['idline']?></h5>
+								<p id="bio"><?php echo $kunci['bio']?></p>
+								
 								<?php } ?>
 							<?php endforeach ?>
 					  </div>
-			</div> -->
+				</div>
+			</div>
+			<?php 
+				// if($this->session->userdata('peran')=="seller") {
+				// 	if($key['id_seller']==$this->seasson->){	
+				// 	}
+				// }
+			?>
+			<h1 style="color:black">asdf</h1>
+		</div>
+		
 		
 			
 			<!-- <div class="order-btn"> 

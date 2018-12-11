@@ -6,7 +6,7 @@
 		<h1>Profile Seller</h1>
 	<table width="100%" id="tablegede">
 		<tr>
-			<td width="50%"><img src="images/avatar.png"></td>
+			<td width="50%"><img src="<?php echo $rows['image']?>"></td>
 			<td width="50%">
 				<table id="tableisi">
 					<tr>
@@ -59,7 +59,7 @@
                 <?php if (true) {?>
                     <a href=<?php echo base_url().'detailbarang?id='.$key['id_barang']?> >
                         <div class="poinbarang">
-                            <img src="<?php echo base_url("images/contohbarang.jpg")?>" style="border-radius:20px;">
+                            <img src="<?php echo $key['image']?>" style="border-radius:20px;">
                             <p><?php echo $key['namaBarang'] ?></p>
                             <p>RP <?php echo $key['harga'] ?></p>
                         </div>

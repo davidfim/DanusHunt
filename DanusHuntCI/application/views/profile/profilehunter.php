@@ -6,7 +6,7 @@
 		<h1>Profile Hunter</h1>
 	<table width="100%" id="tablegede">
 		<tr>
-			<td width="50%"><img src="images/avatar.png"></td>
+			<td width="50%"><img src="<?php echo $rows['image']?>"></td>
 			<td width="50%">
 				<table id="tableisi">
 					<tr>

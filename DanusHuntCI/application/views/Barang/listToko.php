@@ -12,7 +12,7 @@
               
                     <a href=<?php echo base_url().'detailtoko?id='.$key['id_seller']?>>
                         <div class="poinbarang">
-                            <img src="<?php echo base_url("images/avatar.png")?>">
+                            <img src="<?php echo $key['image']?>">
                             <p><?php echo $key['namalengkap'] ?></p>
                             <p>@<?php echo $key['username'] ?></p>
                         </div>

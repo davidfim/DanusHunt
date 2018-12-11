@@ -15,6 +15,7 @@ class TambahBarang extends CI_Controller {
         $jenis=$this->input->post('jenis');
         $harga=$this->input->post('harga');
         $keterangan=$this->input->post('keterangan');
+        $image=$this->input->post('image');
     
         $result = $this->db->query("SELECT id_seller from seller where username='".$this->session->user."'");
         $isExist = $result->num_rows() > 0;
@@ -30,9 +31,9 @@ class TambahBarang extends CI_Controller {
 
         // echo "<pre>"; var_dump($idseller); die();
 
-        $hasil = $this->db->query("INSERT into barang (namaBarang,jenis,harga,keterangan,id_seller) values ('$namabarang', '$jenis', '$harga', '$keterangan', $idseller)");
+        $hasil = $this->db->query("INSERT into barang (namaBarang,jenis,harga,keterangan,id_seller,image) values ('$namabarang', '$jenis', '$harga', '$keterangan', $idseller,'$image')");
 
         // var_dump($hasil);
-        redirect('tambahBarang');
+        redirect('main');
     }
 }

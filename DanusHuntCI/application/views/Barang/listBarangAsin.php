@@ -12,7 +12,7 @@
                 <?php if ($key['jenis']=='asin') {?>
                     <a href=<?php echo base_url().'detailbarang?id='.$key['id_barang']?>>
                         <div class="poinbarang">
-                            <img src="<?php echo base_url("images/contohbarang.jpg")?>">
+                            <img src="<?php echo $key['image']?>">
                             <p><?php echo $key['namaBarang'] ?></p>
                             <p>RP <?php echo $key['harga'] ?></p>
                         </div>

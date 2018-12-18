@@ -47,7 +47,9 @@
 						</div>
 					<?php } ?>
 				</li>
-				<li style="float:right; padding-top:13px;"><img src="<?php echo $rows['image']?>" style="width:50px; height=50px; margin:0px; padding:0px; border-radius:20%; "></li>
+				<li style="float:right; padding-top:13px;"><img src="<?php echo $rows['image']?>" style="width:50px; height=50px; margin:0px; padding:0px; border-radius:5
+				
+				0%; "></li>
 				<li style="float:right;margin-top:10px; margin-right:20px">
 					<form class="" action="<?php echo base_url('listBarangCari') ?>" method="get">
 						<div class="search-box">

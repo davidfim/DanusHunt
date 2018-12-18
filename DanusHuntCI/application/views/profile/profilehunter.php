@@ -29,7 +29,7 @@
 			</td>
 		</tr>
 		<tr>
-	<td><input style="margin-left:20px;" id="simpan" type="button" value="Ganti Gambar"></td>
+	<td></td>
 	<td><a href="<?php echo base_url('EditHunter')?>"><input style="float:right;margin-right: 35px;" id="simpan" type="button" value="Edit Profile"></a>
 	</td>
 		</tr>

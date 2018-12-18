@@ -27,7 +27,7 @@
 							<?php if ($kunci['id_seller']==$numpangvar) { ?>
 					    		<h2 style="margin:10px; color:white;"><?php echo $kunci['namalengkap']; ?></h3>
 					    		<h4 style="margin:10px; "> @<?php echo $kunci['username'];?></h4>
-								<h4 style="margin:10px;"><?php echo $kunci['idline']?></h5>
+								<h4 style="margin:10px;">id line: <?php echo $kunci['idline']?></h5>
 								<p id="bio"><?php echo $kunci['bio']?></p>
 								
 								<?php } ?>
@@ -41,7 +41,6 @@
 				// 	}
 				// }
 			?>
-			<h1 style="color:black">asdf</h1>
 		</div>
 		
 		

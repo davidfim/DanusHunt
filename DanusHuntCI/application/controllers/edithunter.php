@@ -30,7 +30,7 @@ class EditHunter extends CI_Controller {
             }
             if (isset($_POST['image'])!="") {
               if ($_POST['image']!=NULL) {
-                $this->db->query("UPDATE seller SET image='".$_POST['image']."' where username='".$tampunguname."'");
+                $this->db->query("UPDATE hunter SET image='".$_POST['image']."' where username='".$tampunguname."'");
               }
             }
             
